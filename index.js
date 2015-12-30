@@ -130,6 +130,7 @@ app.on('ready', () => {
         win.minimize();
       } else {
         win.restore();
+        win.focus();
       }
     } else {
       if (search.isVisible()) {
