@@ -1,4 +1,4 @@
-# devdogs
+# devdrops
 
 ![out](https://cloud.githubusercontent.com/assets/124117/10069648/87a84332-62e8-11e5-926a-e3f29c8f8422.gif)
 
@@ -12,7 +12,7 @@ Only support OS X, requires OS X 10.8 or newer. [Download](https://github.com/ra
 
 ### Supporting global shortcut
 
-- `Command or Ctrl` + ?: Hide and show application
+- `Command or Ctrl` + ?: Hide and show quick search menu
 
 ## Development
 
@@ -32,4 +32,4 @@ npm package
 
 ## License
 
-MIT © [Jimmy Moon](http://ragingwind.me)
+MIT © [Ben Teichman](#)
