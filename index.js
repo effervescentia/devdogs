@@ -65,7 +65,7 @@ app.on('ready', () => {
 
   tray = new Tray(path.join(__dirname, 'res', 'trayTemplate.png'));
   tray.setContextMenu(Menu.buildFromTemplate([{
-    label: 'Open DevDogs (⌘ + ⇧ + /)',
+    label: 'Open DevDrops (⌘ + ⇧ + /)',
     click: function() {
       if (win === null) {
         loadWindow();

@@ -1,15 +1,14 @@
 {
-  "name": "devdogs",
-  "productName": "Devdogs",
+  "name": "devdrops",
+  "productName": "DevDrops",
   "version": "0.1.6",
-  "description": "DevdoGs, Unofficial Devdocs app for Mac",
+  "description": "DevDrops, Unofficial Devdocs app for Mac",
   "license": "MIT",
   "main": "index.js",
-  "repository": "ragingwind/devdogs",
+  "repository": "effervescentia/devdrops",
   "author": {
-    "name": "ragingwind",
-    "email": "ragingwind@gmail.com",
-    "url": "ragingwind.me"
+    "name": "Ben Teichman",
+    "email": "ben.l.teichman@gmail.com"
   },
   "engines": {
     "node": ">=4"
