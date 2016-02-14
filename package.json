@@ -16,7 +16,7 @@
   "config": {
     "ignore": "--ignore='^/res$' --ignore='^/dist$' --ignore='^/node_modules$'",
     "platform": "--platform=darwin --arch=x64 --prune --asar --icon=res/icon-128.icns",
-    "version": "--version=0.33.0 --app-bundle-id=me.ragingwind.devdocs --app-version=$npm_package_version"
+    "version": "--version=0.33.0 --app-bundle-id=com.tkstr --app-version=$npm_package_version"
   },
   "scripts": {
     "start": "electron ./",
@@ -31,7 +31,7 @@
     "browser.css"
   ],
   "keywords": [
-    "devdogs",
+    "devdrops",
     "devdocs",
     "devdocs.io",
     "electron",
@@ -39,7 +39,7 @@
   ],
   "devDependencies": {
     "cpy": "^3.4.1",
-    "electron-packager": "5.1.0",
+    "electron-packager": "5.2.0",
     "electron-prebuilt": "^0.33.0"
   },
   "dependencies": {
