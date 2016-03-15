@@ -91,7 +91,6 @@ app.on('ready', () => {
   search.loadUrl('http://devdocs.io');
   search.on('blur', function() {
     search.hide();
-    search.minimize();
   });
 
   let searchPosition = new Positioner(search);
@@ -122,21 +121,20 @@ app.on('ready', () => {
     });
   });
 
-  // register a shortcuts
+  // register a shortcut
   Shortcut.register('Command+?', {
     autoRegister: false,
     cmdOrCtrl: true
   }, () => {
     if (win) {
-      if (win.isMinimized()) {
-        win.show();
+      if (win.isVisible()) {
+        win.hide();
       } else {
-        win.minimize();
+        win.show();
       }
     } else {
       if (search.isVisible()) {
         search.hide();
-        search.minimize();
       } else {
         search.show();
       }
