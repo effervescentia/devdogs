@@ -1,4 +1,4 @@
-# devdrops
+# DevDrops
 
 ![out](https://cloud.githubusercontent.com/assets/124117/10069648/87a84332-62e8-11e5-926a-e3f29c8f8422.gif)
 
@@ -6,7 +6,7 @@
 
 ## Install
 
-Only support OS X, requires OS X 10.8 or newer. [Download](https://github.com/ragingwind/devdogs/releases/latest), unzip, copy and run wherever you want
+Only support OS X, requires OS X 10.8 or newer. [Download](https://github.com/effervescentia/devdrops/releases/latest), unzip, copy and run wherever you want
 
 ## Features something different
 
