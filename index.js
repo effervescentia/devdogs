@@ -11,10 +11,11 @@ const Shortcut = require('electron-shortcut');
 const Positioner = require('electron-positioner');
 const Configstore = require('configstore');
 const pkg = require(path.join(__dirname, './package.json'));
-const conf = new Configstore(pkg.name, {animation: 'scale'});
+const conf = new Configstore(pkg.name, { animation: 'scale' });
 
 if (process.env.NODE_ENV !== 'production') {
-  require('crash-reporter').start();
+  require('crash-reporter')
+    .start();
   require('electron-debug')();
 }
 
@@ -90,6 +91,7 @@ app.on('ready', () => {
   search.loadUrl('http://devdocs.io');
   search.on('blur', function() {
     search.hide();
+    search.minimize();
   });
 
   let searchPosition = new Positioner(search);
@@ -126,15 +128,15 @@ app.on('ready', () => {
     cmdOrCtrl: true
   }, () => {
     if (win) {
-      if (!win.isMinimized()) {
-        win.minimize();
+      if (win.isMinimized()) {
+        win.show();
       } else {
-        win.restore();
-        win.focus();
+        win.minimize();
       }
     } else {
       if (search.isVisible()) {
         search.hide();
+        search.minimize();
       } else {
         search.show();
       }
@@ -144,5 +146,6 @@ app.on('ready', () => {
 });
 
 app.on('menuitem-click', (e, args) => {
-  BrowserWindow.getFocusedWindow().webContents.send(e.event);
+  BrowserWindow.getFocusedWindow()
+    .webContents.send(e.event);
 });
